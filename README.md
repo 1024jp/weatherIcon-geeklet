@@ -42,7 +42,7 @@ Install
 Customization of Weather Icons
 ----------------------------------------------------
 Put the icons you made into icons/ folder.
-To relate icon images to Yahoo's weather codes (condition codes), modify weather.pl at about line 24.
+To relate icon images to the Yahoo's weather codes (condition codes), modify weather.pl at about line 24.
 The left values are icon's file names and the right values are Yahoo's condition codes for them.
 
 about condition code see web page [Yahoo! Weather API][].

@@ -35,7 +35,8 @@ my %categories = (
 	'others'   => [0,23,24,25,3200]
 );
 
-
+# image extention
+my $extention = 'png';
 
 
 # main
@@ -76,8 +77,8 @@ use File::Copy;
 my $path = $FindBin::Bin;
 
 foreach my $key (keys %codes) {
-	my $result_path = $path.'/results/'.$key.'.png';
-	my $icon_path   = $path.'/icons/'.$icon_names[$codes{$key}].'.png';
+	my $result_path = $path.'/results/'.$key.'.'.$extention;
+	my $icon_path   = $path.'/icons/'.$icon_names[$codes{$key}].'.'.$extention;
 	
 	copy($icon_path, $result_path) or die;
 }
